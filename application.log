@@ -1,0 +1,44 @@
+2023-02-09 11:25:35 INFO  com.example.demo.DemoApplication [restartedMain] - Starting DemoApplication using Java 17.0.5 with PID 82148 (C:\Users\lenovo\Desktop\demo\demo\target\classes started by lenovo in C:\Users\lenovo\Desktop\demo\demo)
+2023-02-09 11:25:35 INFO  com.example.demo.DemoApplication [restartedMain] - No active profile set, falling back to 1 default profile: "default"
+2023-02-09 11:25:38 DEBUG org.hibernate.SQL [restartedMain] - drop table if exists to_do_task
+2023-02-09 11:25:38 DEBUG org.hibernate.SQL [restartedMain] - create table to_do_task (id bigint not null auto_increment, date date, description varchar(255), owner varchar(255), primary key (id)) engine=MyISAM
+2023-02-09 11:25:38 INFO  com.example.demo.DemoApplication [restartedMain] - Started DemoApplication in 4.007 seconds (process running for 4.66)
+2023-02-09 11:25:39 DEBUG org.hibernate.SQL [restartedMain] - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-09 11:25:39 DEBUG org.hibernate.SQL [restartedMain] - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-09 11:25:39 DEBUG org.hibernate.SQL [restartedMain] - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-09 11:25:39 DEBUG org.hibernate.SQL [restartedMain] - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-09 11:25:39 DEBUG org.hibernate.SQL [restartedMain] - update to_do_task set date=?, description=?, owner=? where id=?
+2023-02-09 11:25:39 DEBUG org.hibernate.SQL [restartedMain] - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
+2023-02-09 11:26:28 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
+2023-02-09 11:27:28 DEBUG org.hibernate.SQL [http-nio-8080-exec-6] - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
+2023-02-09 11:30:47 ERROR o.h.e.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] - HikariPool-1 - Connection is not available, request timed out after 30012ms.
+2023-02-09 11:30:47 ERROR o.h.e.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-02-09 11:30:47 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8080-exec-1] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:944)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:814)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:733)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-09 11:36:35 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
