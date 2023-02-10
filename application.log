@@ -11,3 +11,47 @@
 2023-02-09 13:00:48 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
 2023-02-09 13:01:08 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
 2023-02-09 13:01:25 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:48:45 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.5 with PID 96072 (C:\Users\lenovo\Desktop\demo\demo\target\classes started by lenovo in C:\Users\lenovo\Desktop\demo\demo)
+2023-02-10 10:48:45 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-10 10:48:48 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists to_do_task
+2023-02-10 10:48:48 [restartedMain] DEBUG org.hibernate.SQL - create table to_do_task (id bigint not null auto_increment, date date, description varchar(255), owner varchar(255), primary key (id)) engine=MyISAM
+2023-02-10 10:48:49 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 4.792 seconds (process running for 5.655)
+2023-02-10 10:48:49 [restartedMain] DEBUG org.hibernate.SQL - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-10 10:48:49 [restartedMain] DEBUG org.hibernate.SQL - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-10 10:48:49 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:48:49 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:48:49 [restartedMain] DEBUG org.hibernate.SQL - update to_do_task set date=?, description=?, owner=? where id=?
+2023-02-10 10:48:49 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
+2023-02-10 10:53:51 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.5 with PID 96072 (C:\Users\lenovo\Desktop\demo\demo\target\classes started by lenovo in C:\Users\lenovo\Desktop\demo\demo)
+2023-02-10 10:53:51 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-10 10:53:52 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists to_do_task
+2023-02-10 10:53:52 [restartedMain] DEBUG org.hibernate.SQL - create table to_do_task (id bigint not null auto_increment, date date, description varchar(255), owner varchar(255), primary key (id)) engine=MyISAM
+2023-02-10 10:53:52 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 1.059 seconds (process running for 309.282)
+2023-02-10 10:53:52 [restartedMain] DEBUG org.hibernate.SQL - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-10 10:53:52 [restartedMain] DEBUG org.hibernate.SQL - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-10 10:53:52 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:53:52 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:53:52 [restartedMain] DEBUG org.hibernate.SQL - update to_do_task set date=?, description=?, owner=? where id=?
+2023-02-10 10:53:52 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
+2023-02-10 10:53:54 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.5 with PID 96072 (C:\Users\lenovo\Desktop\demo\demo\target\classes started by lenovo in C:\Users\lenovo\Desktop\demo\demo)
+2023-02-10 10:53:54 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-10 10:53:54 [restartedMain] DEBUG org.hibernate.SQL - drop table if exists to_do_task
+2023-02-10 10:53:54 [restartedMain] DEBUG org.hibernate.SQL - create table to_do_task (id bigint not null auto_increment, date date, description varchar(255), owner varchar(255), primary key (id)) engine=MyISAM
+2023-02-10 10:53:54 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 0.572 seconds (process running for 311.338)
+2023-02-10 10:53:54 [restartedMain] DEBUG org.hibernate.SQL - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-10 10:53:54 [restartedMain] DEBUG org.hibernate.SQL - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-10 10:53:54 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:53:54 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:53:54 [restartedMain] DEBUG org.hibernate.SQL - update to_do_task set date=?, description=?, owner=? where id=?
+2023-02-10 10:53:54 [restartedMain] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
+2023-02-10 10:53:56 [main] INFO  c.example.demo.DemoApplicationTests - Starting DemoApplicationTests using Java 17.0.5 with PID 110672 (started by lenovo in C:\Users\lenovo\Desktop\demo\demo)
+2023-02-10 10:53:56 [main] INFO  c.example.demo.DemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-02-10 10:53:59 [main] DEBUG org.hibernate.SQL - drop table if exists to_do_task
+2023-02-10 10:53:59 [main] DEBUG org.hibernate.SQL - create table to_do_task (id bigint not null auto_increment, date date, description varchar(255), owner varchar(255), primary key (id)) engine=MyISAM
+2023-02-10 10:54:00 [main] INFO  c.example.demo.DemoApplicationTests - Started DemoApplicationTests in 3.684 seconds (process running for 4.795)
+2023-02-10 10:54:00 [main] DEBUG org.hibernate.SQL - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-10 10:54:00 [main] DEBUG org.hibernate.SQL - insert into to_do_task (date, description, owner) values (?, ?, ?)
+2023-02-10 10:54:00 [main] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:54:00 [main] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0 where t1_0.id=?
+2023-02-10 10:54:00 [main] DEBUG org.hibernate.SQL - update to_do_task set date=?, description=?, owner=? where id=?
+2023-02-10 10:54:00 [main] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.date,t1_0.description,t1_0.owner from to_do_task t1_0
